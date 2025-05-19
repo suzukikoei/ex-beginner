@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>演習５検索結果画面</title>
+  </head>
+  <body>
+    検索結果<br />
+    <span th:each="result: ${results}">
+      <span th:text="${result}">検索結果</span><br />
+    </span>
+  </body>
+</html>
