@@ -5,7 +5,8 @@
     <title>演習１</title>
   </head>
   <body>
-    <form th:action="@{/exam01/inputName}" method="post">
+    <!-- TODO th:actionを変更、th:objectを追加 -->
+    <form th:action="@{/Exam01/inputName}" method="post">
       <label for="name">名前：</label>
       <input type="text" id="name" name="name" /><br />
       <button>送信</button>
