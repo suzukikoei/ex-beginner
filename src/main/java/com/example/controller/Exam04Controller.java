@@ -32,7 +32,7 @@ public class Exam04Controller {
         }
 
         ModelMapper modelMapper = new ModelMapper();
-        //        form オブジェクトの内容を User クラスのインスタンスに変換して、user という変数に代入
+        //form オブジェクトの内容を User クラスのインスタンスに変換して、user という変数に代入
         User user = modelMapper.map(form, User.class);
 
         redirectAttributes.addFlashAttribute("user", user);
