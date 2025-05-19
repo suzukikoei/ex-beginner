@@ -1,4 +1,4 @@
-package com.example.repository;
+package com.example.domain;
 
 public class Member {
     private Integer id;
