@@ -26,7 +26,7 @@ public class MemberRepository {
             };
 
     public List<Member> findByName(String partOfName){
-        String sql = "SELECT * FROM employees WHERE name LIKE :name";
+        String sql = "SELECT * FROM members WHERE name LIKE :name";
         SqlParameterSource param = new MapSqlParameterSource().addValue("name", "%" + partOfName + "%");
         return template.query(sql, param, MEMBER_ROW_MAPPER);
     }
